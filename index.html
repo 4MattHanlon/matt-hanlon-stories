@@ -1,0 +1,485 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Matt Hanlon: Selected Stories</title>
+<style>
+:root{--bg:#fafaf7;--fg:#1d1d1b;--mut:#66665f;--card:#fff;--line:#e2e1da;--acc:#1a4f8b}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#16161a;--fg:#ecebe6;--mut:#a3a39b;--card:#1f1f25;--line:#34343c;--acc:#7fb2ea}}
+:root[data-theme="dark"]{--bg:#16161a;--fg:#ecebe6;--mut:#a3a39b;--card:#1f1f25;--line:#34343c;--acc:#7fb2ea}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 16px 64px}
+.sub{color:var(--mut);margin:0 0 20px;font-size:1.05rem}
+label{display:block;font-weight:600;margin-bottom:6px;font-size:.95rem}
+select{width:100%;font:inherit;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--fg)}
+.filters{display:grid;gap:12px} @media(min-width:640px){.filters{grid-template-columns:1fr 1fr 1fr}}
+.count{color:var(--mut);font-size:.9rem;margin:12px 0 18px}
+.empty{border:1px dashed var(--line);border-radius:12px;padding:28px 18px;text-align:center;color:var(--mut)}
+.hero{margin:0 0 22px;font-size:1.05rem}
+.top{border-top:6px solid var(--acc);padding:8px 0 4px;margin:0 0 22px}
+.kicker{text-transform:uppercase;letter-spacing:.12em;font-size:.78rem;color:var(--acc);font-weight:700;margin:0 0 6px}
+.top h1{font-size:2.2rem;letter-spacing:-.01em}
+.summary{font-size:1.05rem;margin:4px 0 0;color:var(--fg)}
+.bio{margin:10px 0 0;color:var(--mut);max-width:60ch}
+.use{color:var(--mut);font-size:.92rem;margin:4px 0 0}
+.qs{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:0 0 22px}
+.qs .qh{font-size:1rem;margin:0 0 8px} .qs ul{margin:0;padding:0;list-style:none} .qs li{padding:6px 0;border-top:1px solid var(--line)} .qs li:first-child{border-top:0} .qs span{display:block;color:var(--mut);font-size:.92rem} .qs a{color:var(--acc);text-decoration:none;font-weight:600}
+.contact{margin-top:36px;padding-top:18px;border-top:1px solid var(--line);color:var(--mut);font-size:.95rem}
+.contact a{color:var(--acc)}
+.strip{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:0 0 22px} @media(min-width:640px){.strip{grid-template-columns:repeat(3,1fr)}}
+.strip div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px}
+.strip strong{display:block;font-size:1.35rem;color:var(--acc)} .strip span{font-size:.85rem;color:var(--mut)}
+.story{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;margin:0 0 16px}
+.story[hidden]{display:none}
+.story h2{font-size:1.15rem;margin:0 0 8px}
+.body h4{font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--mut);margin:14px 0 4px}
+.body p{margin:6px 0} .body ul{margin:6px 0 6px 20px;padding:0} .body li{margin:4px 0}
+.copy{margin-top:12px;font:inherit;font-size:.9rem;padding:6px 12px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--fg);cursor:pointer}
+</style></head><body><main>
+<header class="top">
+<p class="kicker">Partnerships and product, CTV and programmatic</p>
+<h1>Matt Hanlon</h1>
+<p class="summary">Partnerships and product leader in CTV and programmatic. Publisher monetization, DSP and agency growth, and ad server integrations.</p>
+</header>
+<p class="sub">Want the full stories or a walkthrough? Reach out below.</p>
+<p class="hero">Pick a principle, side of the market, or topic to see the stories that match. Filters combine, so you can narrow to something like Customer focus, Publisher, Optimization and pricing.</p>
+<section class="strip">
+<div><strong>1 → 4</strong><span>CTV team built from one person to four</span></div>
+<div><strong>~60x</strong><span>Dormant DSP account, under $100 to about $6K a day in roughly a month</span></div>
+<div><strong>~50x</strong><span>Underperforming deal recovered from under $100 to about $5K a day</span></div>
+<div><strong>~50%</strong><span>Lift in PMP and open-exchange revenue for a kids-focused publisher</span></div>
+<div><strong>8 of 8</strong><span>Product requests shipped on public dates for a CTV publisher</span></div>
+<div><strong>$0 → $1M+</strong><span>A CPG brand's spend with a CTV publisher after the blockers shipped</span></div>
+</section>
+<div class="filters">
+<div><label for="principle">Principle</label>
+<select id="principle"><option value="">Any principle</option>
+<option value="Customer focus">Customer focus</option>
+<option value="Cross-functional leadership">Cross-functional leadership</option>
+<option value="Building trust">Building trust</option>
+<option value="Ownership">Ownership</option>
+<option value="Delivering results">Delivering results</option>
+<option value="Strategic thinking">Strategic thinking</option>
+<option value="Simplifying and innovating">Simplifying and innovating</option>
+<option value="Data-driven decisions">Data-driven decisions</option>
+<option value="Raising the bar">Raising the bar</option>
+<option value="Team building">Team building</option>
+</select></div>
+<div><label for="side">Side of the market</label>
+<select id="side"><option value="">Any side</option>
+<option value="Publisher">Publisher</option>
+<option value="Demand">Demand</option>
+<option value="Internal">Internal</option>
+</select></div>
+<div><label for="topic">Topic</label>
+<select id="topic"><option value="">Any topic</option>
+<option value="Deals and performance">Deals and performance</option>
+<option value="Product build and launch">Product build and launch</option>
+<option value="Data and measurement">Data and measurement</option>
+<option value="Publisher partnerships">Publisher partnerships</option>
+<option value="DSP and agency partnerships">DSP and agency partnerships</option>
+<option value="Supply quality and accountability">Supply quality and accountability</option>
+<option value="Account growth and win-back">Account growth and win-back</option>
+<option value="Optimization and pricing">Optimization and pricing</option>
+<option value="Team building">Team building</option>
+</select></div>
+</div>
+<section class="qs"><h2 class="qh">Frequently asked questions</h2><ul>
+<li><span>How do you build a team?</span> <a href="#" data-story="15">Recruiting the People Who Replaced Me</a></li>
+<li><span>How do you grow a partner?</span> <a href="#" data-story="7">Land Small, Learn the Economics, Then Go</a></li>
+<li><span>How do you structure a deal?</span> <a href="#" data-story="1">Certifying a DSP Under a Deadline</a></li>
+<li><span>How do you get product built?</span> <a href="#" data-story="9">A Workflow Trap, Not a Feature Gap</a></li>
+<li><span>How do you fix a deal that&#x27;s not working?</span> <a href="#" data-story="16">Restructuring Economics to Unlock Eight Stalled Deals</a></li>
+</ul></section>
+<p class="count" id="count"></p>
+<div class="empty" id="empty">Choose a filter above to see stories.</div>
+<article class="story" data-principles="Customer focus|Building trust|Delivering results" data-side="Publisher|Demand" data-topics="Product build and launch|Publisher partnerships|Data and measurement">
+<header><h2>Rebuilding Credibility You Did Not Break</h2><p class="use"><strong>Use for:</strong> Influence without authority, customer trust, cross-functional delivery, prioritizing product work.</p></header>
+<div class="body"><h4>Situation</h4>
+<p>I was working to identify gaps across our CTV publisher suite from a demand perspective, and I saw that a CPG brand was doing five to ten times the demand with other CTV partners that it was doing with a CTV publisher. I had only owned the account two or three months.</p>
+<h4>Diagnosis — outside in</h4>
+<ul>
+<li>Flagged it to our sales lead on a CPG brand and asked to get on a call with the buyer.</li>
+<li>The buyer said the holdup was at the a CTV publisher level.</li>
+<li>Went to a CTV publisher, who told me there were eight outstanding product requirements for their PG and PMP deals — the critical one being pixel tracking in our UI that buyers could attach to a deal.</li>
+<li>The harder truth: a CTV publisher said they had lost any belief that we would build anything. They had asked before, repeatedly, and nothing had ever shipped. Their client services team would not even engage on it.</li>
+</ul>
+<h4>Action</h4>
+<ul>
+<li>Confirmed the diagnosis from both directions — got buy-in from our a CPG brand lead internally and from the buyer that this was genuinely the blocker, so I was not taking the publisher’s word alone.</li>
+<li>Put our product team and the publisher’s product team on calls together, with sales on both sides.</li>
+<li>Established a public timeline for each of the eight builds, which is what started rebuilding credibility — a date they could hold me to.</li>
+<li>Ran bi-weekly calls giving status on every individual build. No skipped updates, including the ones where nothing had moved.</li>
+<li>Made the business case up to our CTO and our global head of CTV on why this needed immediate priority, because the asks were mostly deal management and would never have been picked up on their own merits.</li>
+</ul>
+<h4>Result</h4>
+<ul>
+<li>September to December — all eight product builds addressed, tested and verified, with pixel tracking last.</li>
+<li>a CPG brand went from zero PMP and PG dollars with this publisher to over $1M the following quarter.</li>
+<li>Opened further work with a global agency group and additional a CPG brand business on the same pixel tracking mechanism.</li>
+<li>Scoped across the entire CTV publisher portfolio, not just a CTV publisher.</li>
+</ul></div>
+<button class="copy">Copy story</button>
+</article>
+<article class="story" data-principles="Delivering results|Strategic thinking|Ownership|Building trust" data-side="Demand|Publisher" data-topics="DSP and agency partnerships|Product build and launch|Deals and performance">
+<header><h2>Certifying a DSP Under a Deadline</h2><p class="use"><strong>Use for:</strong> Deadlines, scaling a deal across partners, product certification, building a repeatable operating model.</p></header>
+<div class="body"><h4>Situation</h4>
+<p>I was looking at where SPO dollars were going with our other CTV partners and saw that an automotive brand spend through a global holding company was not landing the way it should. My day-to-day indirect contacts confirmed the an automotive brand deals could not run as constituted, and a senior a global holding company lead certified that was the case.</p>
+<h4>The real obstacle</h4>
+<p>It was not the SPO agreement. a major DSP was not certified to run programmatic guaranteed or PMP deals on the the platform platform at all. And we needed deals standing up before the July 4th weekend.</p>
+<h4>Action</h4>
+<ul>
+<li>Convened a single call with our indirect team, a global holding company’s direct management team, DSP solutions engineering, and ad solutions sales — everyone who could unblock it, in one room.</li>
+<li>Amended the IO to adjust commercial terms.</li>
+<li>Worked directly with solutions engineering on the DSP side on the technical certification path.</li>
+<li>Got clearance from our own marketing team to spend the platform advertising budget on a live test campaign through a major DSP — we funded the proof ourselves.</li>
+<li>Worked across the CTV team with a counterpart to find a friendly CTV publisher to test against.</li>
+<li>Ran $100 and then $1,000 PG and PMP test campaigns over a 24-hour window, and verified with product engineering that they delivered in full.</li>
+<li>a major DSP was certified for PG and PMP off the back of that.</li>
+<li>Built out the an automotive brand deals for the holiday weekend across an automotive brand, an automotive brand, an automotive brand and other buyers.</li>
+<li>Built a specific product capability into it — KVP targeting layered into SSIDs in deal setup, so ACR data could attach through the ad server.</li>
+</ul>
+<h4>Result</h4>
+<ul>
+<li>a six-figure in the first month, July into August.</li>
+<li>a seven-figure in Q4. a multi-million in Q1. a multi-million in Q2.</li>
+<li>an automotive brand brands alone — not counting the other buyers the playbook extended to.</li>
+</ul>
+<h4>WHY IT SCALED</h4>
+<ul>
+<li>The relationship with the publisher and their sales teams got tight off the back of it.</li>
+<li>Set up a protocol with the deal desk team for deal setup and monitoring — deals flagged as they came in, tracked on a list, troubleshooting running in the background over Slack.</li>
+<li>That operating model is what scaled it beyond a global holding company: a global agency group and a global agency group deals including a hotel brand, and a national bank as a direct programmatic partner running through a tier-one CTV publisher.</li>
+</ul></div>
+<button class="copy">Copy story</button>
+</article>
+<article class="story" data-principles="Cross-functional leadership|Building trust|Strategic thinking|Ownership" data-side="Publisher" data-topics="Publisher partnerships|Data and measurement">
+<header><h2>Holding a Two-Year Negotiation Through Three General Counsels</h2><p class="use"><strong>Use for:</strong> Long negotiations, stakeholder turnover, aligning legal, technical, and commercial teams.</p></header>
+<div class="body"><h4>Situation</h4>
+<p>a tier-one CTV publisher was running on year-to-year IOs with no master services agreement, and they had two significantly undermonetized assets — premium PMP inventory and their ACR data. I set out to put a real MSA in place that covered both.</p>
+<h4>The complication that is the story</h4>
+<p>Over the course of the negotiation we went through three different general counsels on our side. Several changed over the course of the negotiation. a tier-one CTV publisher kept the same two people the entire time. I was the only continuous thread, briefing each new lawyer from scratch — and a tier-one CTV publisher’s legal team got frustrated every time we got close and had to restart.</p>
+<h4>Action</h4>
+<ul>
+<li>Kept a tier-one CTV publisher’s day-to-day contacts apprised even though they were not on the legal calls, so the relationship never went dark while the paper stalled.</li>
+<li>Managed the relationship with a tier-one CTV publisher’s head of client services deliberately — kept them happy and pitched them on our redlines so they would help soften what their own GC was pushing back on.</li>
+<li>Onboarded each incoming GC by leading with engineering and privacy rather than with the contract, so they understood what they were papering before they read it.</li>
+<li>Brought subject-matter experts in on both sides to unstick redlines where the two legal teams were deadlocked.</li>
+</ul>
+<h4>Result</h4>
+<ul>
+<li>Signed a dual-asset agreement covering both the PMP inventory and the ACR data, with performance-linked economics.</li>
+<li>It became the model for how we structured tier-one publisher partnerships.</li>
+</ul></div>
+<button class="copy">Copy story</button>
+</article>
+<article class="story" data-principles="Strategic thinking|Simplifying and innovating|Ownership|Customer focus" data-side="Publisher|Demand" data-topics="Data and measurement|Publisher partnerships">
+<header><h2>A Deal That Did Not Exist</h2><p class="use"><strong>Use for:</strong> Data partnerships, measurement design, and a deal that did not run to plan.</p></header>
+<div class="body"><h4>Situation</h4>
+<p>We were looking for new areas of opportunity with our CTV publishers. I had been working to get closer to a CTV publisher, and what they wanted was direct dialogue between our sales team and theirs — not another platform conversation. I set that up, and it is what made everything after it possible.</p>
+<h4>The opening</h4>
+<p>Out of those conversations we identified an opportunity through our a grocery commerce partner partnership: commerce data layered onto the publisher’s CTV inventory. Nobody was doing that combination. We packaged it and pitched the publisher’s sales team five audience segments they could take to their own buyers.</p>
+<h4>Action</h4>
+<ul>
+<li>Built the pitch for the publisher’s sales team to carry to their buyers — I was arming someone else’s sales motion, not selling directly.</li>
+<li>When a pet brand came back interested, worked out which commerce partners fit and which segments the advertiser actually needed.</li>
+<li>a pet brand is pet, so through a grocery commerce partner we targeted dog owners and households purchasing dog food and kibble.</li>
+<li>a grocery commerce partner’s purchase data was precise but thin — it did not attach to enough bid requests on its own to be deliverable. So I layered a data partner’s &quot;cool dog moms&quot; segment on top to lift segment attachment per request and get addressable scale up.</li>
+<li>Sized the segments, scoped a credible test campaign, and set the budget to power it.</li>
+<li>Structured measurement as an A/B test on the deal against an NCS brand lift study, so the result would be defensible to the advertiser.</li>
+<li>Executed through our our activation platform and secured buy-in across all three partnerships on a skeleton scope.</li>
+</ul>
+<h4>Result</h4>
+<ul>
+<li>A first-of-its-kind a six-figure deal.</li>
+<li>Brought together two data partners, our our activation platform, the publisher’s direct and indirect sales teams, and the platform sales.</li>
+</ul></div>
+<button class="copy">Copy story</button>
+</article>
+<article class="story" data-principles="Strategic thinking|Customer focus|Delivering results" data-side="Demand" data-topics="DSP and agency partnerships|Deals and performance|Optimization and pricing">
+<header><h2>Land Small, Learn the Economics, Then Go</h2><p class="use"><strong>Use for:</strong> Turning a dormant partner around, learning a partner&#x27;s economics before scaling.</p></header>
+<div class="body"><h4>Situation</h4>
+<h4>Action — the diagnosis</h4>
+<ul>
+<li>Stopped pushing deals and set up a QBR to understand their business — where they had direct one-to-one publisher relationships and where they did not.</li>
+<li>Found the gap: OLV and web display, because they do not do one-to-one there. Other curation partners were winning with high-CTR and OLV deals we had never set up.</li>
+</ul>
+<h4>Action — the land</h4>
+<ul>
+<li>Built and sent those OLV and display deals for them to activate. They saw incremental, smaller demand.</li>
+<li>That was deliberate on two counts: earn their trust with a real result, and learn how their economics actually work with other curation partners before I structured anything larger.</li>
+</ul>
+<h4>Action — the expand</h4>
+<ul>
+<li>Went deeper on where they lacked direct relationships and found it: CTV publishers with left-leaning and right-leaning political supply. They had no premium political pubs with data layered for left and right.</li>
+<li>Built multiple deals against it, mindful of their existing SPO agreements with four SSPs.</li>
+<li>Gated on week-over-week performance, then narrowed to two SSPs where performance was landing and where their SPO economics returned a higher percentage of revenue back to them.</li>
+</ul>
+<h4>Result</h4>
+<ul>
+<li>Roughly 60x — under $100/day to about $6K/day.</li>
+<li>Roughly one month, mid-to-late August to now, with a new high in the last week.</li>
+<li>Broader CTV traction emerging, still early days.</li>
+</ul>
+<h4>Good stories</h4></div>
+<button class="copy">Copy story</button>
+</article>
+<article class="story" data-principles="Delivering results|Customer focus|Data-driven decisions" data-side="Demand" data-topics="DSP and agency partnerships|Deals and performance|Optimization and pricing">
+<header><h2>Cold Account to 6x in Three Months</h2><p class="use"><strong>Use for:</strong> Cold accounts, validating on outcomes rather than delivery, open questions on data costs.</p></header>
+<div class="body"><h4>Situation</h4>
+<p>Cold account at my current company. Four a quick-service restaurant brand segments — general, Hispanic, Asian and African American.</p>
+<h4>Action</h4>
+<ul>
+<li>Built three deals per segment across CTV, display and OLV — twelve deals live June 1.</li>
+<li>Removed underperformers and ran a separate OEM-only strategy.</li>
+<li>Validated on CPA and conversion rather than delivery metrics alone.</li>
+</ul>
+<h4>Result</h4>
+<ul>
+<li>Roughly $1K/day to $6K/day. More deals green-lit in November.</li>
+</ul>
+<h4>OPEN QUESTION</h4>
+<p>I am working with third-party data partners inside the exchanges to attach multicultural audience segments to each deal. The tension is that data CPMs inflate the price on what are fundamentally performance deals, which could undermine the CPA we are being judged on. Still being investigated.</p></div>
+<button class="copy">Copy story</button>
+</article>
+<article class="story" data-principles="Customer focus|Simplifying and innovating|Cross-functional leadership" data-side="Publisher" data-topics="Product build and launch|Publisher partnerships">
+<header><h2>A Workflow Trap, Not a Feature Gap</h2><p class="use"><strong>Use for:</strong> Product gaps that block revenue, sizing a business case, shipping platform-wide.</p></header>
+<div class="body"><h4>Situation</h4>
+<p>Our PMP setup had hard targeting limits — no content metadata targeting, segment exclusion capped around 10, bundle ID inclusion capped at 25, and KVP targeting was in scope too.</p>
+<h4>THE REAL MECHANISM</h4>
+<p>Publisher direct sales teams could not set up next-quarter deals while current-quarter deals were still running, because the targeting limits were already consumed. They had to wait for deals to expire at quarter end, which left a tiny window to build everything for the following quarter. So they went and built deals elsewhere, where the roadblock did not exist. That is how the business was actually being lost — a workflow trap, not a missing feature.</p>
+<h4>How i sized it</h4>
+<ul>
+<li>Observed it on two publishers in my own book.</li>
+<li>Worked with product to establish that a significant number of other publishers wanted the same thing.</li>
+<li>Projected quarter-over-quarter new deal revenue across that subset, then scaled it to the book. Omnichannel and CTV, not CTV-only.</li>
+</ul>
+<p>If asked for the figure: state the method, then say &quot;I do not have the exact number in front of me, but it was large enough that product prioritized it and shipped it platform-wide.&quot; The method is what is being tested, and the platform-wide ship is the proof.</p>
+<h4>Result</h4>
+<ul>
+<li>Over two to three quarters: content metadata targeting added, exclusions raised to 100, bundle ID inclusion raised to 250.</li>
+<li>Shipped platform-wide, not as a one-off for my accounts.</li>
+</ul></div>
+<button class="copy">Copy story</button>
+</article>
+<article class="story" data-principles="Data-driven decisions|Raising the bar" data-side="Demand" data-topics="Deals and performance|Data and measurement|Optimization and pricing">
+<header><h2>Lowering the Price Made It Perform Worse</h2><p class="use"><strong>Use for:</strong> A difficult internal disagreement, data-driven pushback, reversing a decision well.</p></header>
+<div class="body"><h4>Situation</h4>
+<p>Ad ops makes margin and CPM adjustment recommendations on deals I manage. They made one on Unified, and the deal collapsed to under $100/day.</p>
+<h4>The disagreement</h4>
+<p>After a week or two their position was that it was campaign-driven — a demand problem, not their change. I did my own research on match rate, win rate and other key metrics, using AI to work through the reporting volume — thousand-plus line exports segmented by exchange, an SSP and an SSP.</p>
+<h4>What the data showed</h4>
+<p>The opposite. The lower price meant the deal was not winning in the auction — it was getting beaten out. Price is how you win the auction, so cutting it made performance worse, not better.</p>
+<h4>The hard part was not the analysis</h4>
+<ul>
+<li>Ad ops pushed back. I escalated internally to get other people to look at the data.</li>
+<li>And I advocated in a way that gave the person room to reverse their position without it costing them anything. That was most of the work.</li>
+<li>Reverting to the original CPM with adjusted margin restored performance and then exceeded it. That was my call.</li>
+</ul>
+<h4>Result</h4>
+<ul>
+<li>Under $100/day to about $5K/day — roughly 50x.</li>
+</ul>
+<h4>The future-proofing — this is your genai answer</h4>
+<p>I built a protocol where any deal with modifications gets flagged within 72 hours, populates into Slack, and AI reads the deal performance so the team catches whether a change helped or hurt. It is a control built in response to a specific failure, catching a known class of problem on a defined window.</p></div>
+<button class="copy">Copy story</button>
+</article>
+<article class="story" data-principles="Customer focus|Delivering results|Simplifying and innovating" data-side="Publisher" data-topics="Publisher partnerships|Product build and launch">
+<header><h2>Giving a Partner the Keys Because the Constraint Was Infrastructure</h2><p class="use"><strong>Use for:</strong> Diagnosing the real constraint, giving a partner more control, compliance-aware deals.</p></header>
+<div class="body"><h4>Situation</h4>
+<p>a kids-focused publisher has heavy COPPA-restricted kids inventory with real compliant demand against it — co-viewing and contextual, things like a a beverage brand brand awareness buy where a parent is in the room with child-friendly creative. They had run out of pipes to run it through, and their own ad server was hitting significant QPS issues.</p>
+<h4>The diagnosis</h4>
+<p>Their constraint was infrastructure, not demand. That is what made the rest of it justifiable.</p>
+<h4>Action</h4>
+<ul>
+<li>Pitched and closed a membership fee.</li>
+<li>Adjusted their activation rates lower so the publisher was actually incentivized, which also made their win rate more aggressive.</li>
+<li>Demoed to their sales leads and to their hands-on-keyboard deal desk and customer success team — the people who monitor and run deals day to day.</li>
+<li>Gave them direct access to our our activation platform so they could run their own deals in it. That was unusual — publishers do not normally get the keys.</li>
+<li>Positioned it against an ad server on cost structure, which was genuinely more advantageous for them.</li>
+</ul>
+<h4>Result</h4>
+<ul>
+<li>Roughly 50% increase in PMP and open exchange revenue.</li>
+<li>Net-new revenue through the deals they ran in our activation platform, on top of the hard-cost membership revenue.</li>
+</ul></div>
+<button class="copy">Copy story</button>
+</article>
+<article class="story" data-principles="Strategic thinking|Cross-functional leadership|Customer focus" data-side="Demand|Publisher" data-topics="DSP and agency partnerships|Account growth and win-back">
+<header><h2>Putting Two Sales Organizations in One Room</h2><p class="use"><strong>Use for:</strong> Cross-organization roundtables, mapping an account beyond what is in front of you.</p></header>
+<div class="body"><p>No revenue number, so it cannot carry Deliver Results. It is a strong answer to &quot;how do you grow an account beyond what is in front of you.&quot;</p>
+<h4>Situation</h4>
+<p>I wanted to demo how we could bring our buy side and our publishers together instead of pitching deals one at a time.</p>
+<h4>Action — the parent motion</h4>
+<ul>
+<li>Built a deck mapping the entire buy side — every holding company code, the independents, brand direct — with what big accounts they were working on, which deals were monetizing, and who was leading each one.</li>
+<li>Ran it as a roundtable, in person, with senior leadership on the publisher side — heads of sales and RVPs — and the relevant buy-side teams on the call.</li>
+</ul>
+<h4>Action — the operating cadence</h4>
+<ul>
+<li>Mapped the sales org at the publisher and paired counterparts directly — the a global agency group lead at a CTV publisher with the a global agency group lead at the platform, and so on.</li>
+<li>Ran monthly to bi-monthly sessions between those pairs to compare what each side was seeing and surface deals we were missing or could test in the the platform pipes.</li>
+<li>Took it down to hands-on-keyboard too — sat with their operational people on specific deals and pulled in our deal desk to optimize.</li>
+</ul>
+<h4>Result</h4>
+<ul>
+<li>Ran across the book — a tier-one CTV publisher, a CTV publisher, a kids-focused publisher.</li>
+<li>Surfaced a global agency group and a global agency group marketplace deals, and a beverage brand deals.</li>
+<li>a consumer electronics brand was the exception — structured and operated differently, so the playbook did not apply there.</li>
+</ul>
+<p>The a consumer electronics brand caveat is worth keeping. It shows you knew where the playbook applied and where it did not.</p></div>
+<button class="copy">Copy story</button>
+</article>
+<article class="story" data-principles="Building trust|Delivering results|Customer focus" data-side="Publisher" data-topics="Account growth and win-back|Publisher partnerships">
+<header><h2>Winning Back an Account That Had Already Fired Us</h2><p class="use"><strong>Use for:</strong> Winning back a partner who cut you off, technical evaluations, proof over projections.</p></header>
+<div class="body"><h4>Situation</h4>
+<p>They had cut us off and turned us off entirely before I came onto the account. They did not believe in the integration.</p>
+<h4>Action</h4>
+<ul>
+<li>Got our CEO in front of their senior director to reset it at the top.</li>
+<li>Took the day-to-day relationship on myself — plugged in as much demand as we could, got the bid requests clean and the supply properly mapped, and mapped as many deals as possible across the platform wherever we saw them buying into other partnerships.</li>
+<li>Caught that they were evaluating a client-side pre-bid wrapper against a server-side wrapper — both things we could do.</li>
+<li>Got them on a demo with our solutions engineers, included a sales lead from our wrapper product, and mapped out the pricing.</li>
+<li>Projected the net revenue increase we thought we could deliver.</li>
+<li>Leveraged relationships with major news publishers already live on our wrapper — as friendly references and a case study, so they heard it from peer publishers rather than from me.</li>
+</ul>
+<h4>Result</h4>
+<ul>
+<li>$50K/month gross to a six-figure in peak months — roughly 10x.</li>
+<li>All of it running through rev share on our server-side wrapper.</li>
+</ul>
+<h4>The move worth naming</h4>
+<p>I brought proof rather than projections. Same instinct as a DSP — prove it small, let the evidence do the persuading.</p></div>
+<button class="copy">Copy story</button>
+</article>
+<article class="story" data-principles="Ownership|Delivering results" data-side="Publisher|Demand" data-topics="Account growth and win-back|Publisher partnerships">
+<header><h2>Taking the Book Nobody Claimed</h2><p class="use"><strong>Use for:</strong> Taking on an unclaimed book, growing small accounts into larger ones, sales enablement.</p></header>
+<div class="body"><h4>Situation</h4>
+<p>There was a CTV publisher roster nobody had claimed. I volunteered for it.</p>
+<h4>Why — the commercial read, not a visionary one</h4>
+<ul>
+<li>My web display book was going stagnant.</li>
+<li>Demand requests from our ad solutions team were heavily weighted to CTV.</li>
+<li>New publishers were coming live constantly and the space was unclaimed from both a management and a demand standpoint — wild west.</li>
+<li>I could package CTV supply and plug it into the largest deals already running, particularly TTD and Adobe. So I went where the demand already was.</li>
+</ul>
+<h4>Action</h4>
+<ul>
+<li>Started with FAST channels — Cineverse, a kids-focused publisher — and FAST aggregators like Orca TV that monetize several publishers under one pub ID.</li>
+<li>On a tier-one CTV publisher: found we were not getting the request volume other SSPs were, we had the capacity to take it, and the publisher had no idea. Told them, and stopped limiting ourselves on what we could take.</li>
+<li>Stood up a monthly Friday publisher showcase for our CTV team — demand-side sales sessions that put FAST supply and a tier-one CTV publisher specifically in front of buyers who did not know it existed.</li>
+</ul>
+<h4>Result</h4>
+<ul>
+<li>Three accounts to fifty-plus. Multi-million growth.</li>
+<li>our CTV performance is why leadership trusted me with the largest accounts when they relocated them west.</li>
+</ul></div>
+<button class="copy">Copy story</button>
+</article>
+<article class="story" data-principles="Team building|Ownership|Strategic thinking" data-side="Internal" data-topics="Team building">
+<header><h2>Recruiting the People Who Replaced Me</h2><p class="use"><strong>Use for:</strong> Building and developing a team, internal hiring, succession.</p></header>
+<div class="body"><p>A succession story, not a headcount story. The ending is the point.</p>
+<h4>Situation</h4>
+<p>I was the sole CSM on the West Coast, working across six different CSOMs for my account list, which was getting confusing. Leadership was asking how we expand our CTV footprint, and I raised my hand.</p>
+<h4>Action</h4>
+<ul>
+<li>Proved it first by building out and growing the accounts, working with our East Coast CSOM organization as the only West Coast CSM.</li>
+<li>Identified people already inside the organization who had both interest in CTV and real expertise.</li>
+<li>Brought on a senior CSM who had previously worked at a CTV organization — I pitched him on moving to the CTV team because I thought it was a great opportunity for him. He shadowed my accounts and eventually took them over.</li>
+<li>Identified someone on the West Coast CSM bench who wanted to be in CTV.</li>
+<li>When a company restructuring siloed CTV under one leadership team, took on interviewing, hiring, ramping and coaching — including a new CSM in Redwood City who took over additional accounts.</li>
+</ul>
+<h4>Result</h4>
+<ul>
+<li>One to four.</li>
+<li>I handed my accounts off and moved into the partnerships team — still working closely with those CSMs and CSOMs, but as a higher-level contact point to the publishers, working on bigger projects.</li>
+</ul>
+<h4>The point</h4>
+<p>Hire and Develop the Best is not really about hiring. It is about spotting talent before it is obvious and moving people to where they will do their best work. I did that internally, with no req and no authority, by making the case to someone that a move was good for him. And I built the people who replaced me, which is how I got promoted.</p></div>
+<button class="copy">Copy story</button>
+</article>
+<article class="story" data-principles="Simplifying and innovating|Delivering results|Building trust" data-side="Publisher" data-topics="Deals and performance|Publisher partnerships">
+<header><h2>Restructuring Economics to Unlock Eight Stalled Deals</h2><p class="use"><strong>Use for:</strong> Fixing stalled deals through commercial restructuring.</p></header>
+<div class="body"><p>Your own read: it is a C-level story. No real tension in it. Use it as a second answer behind PMP limits, not as an opener.</p>
+<h4>Situation</h4>
+<p>We were a preferred partner with a publisher for a large CPG advertiser. Eight deals were green-lit and nothing moved.</p>
+<h4>Diagnosis</h4>
+<p>The root cause was the agreement construct, not demand. The economics did not work for the publisher on those specific deals.</p>
+<h4>Action</h4>
+<ul>
+<li>Modeled a take-rate change with finance and biz ops.</li>
+<li>Scoped an MSA amendment to just those eight deals rather than reopening the whole agreement.</li>
+<li>Traded down on those deals in exchange for better economics on the platform-sourced net-new business.</li>
+<li>Carved TTD out entirely.</li>
+</ul>
+<h4>Result</h4>
+<ul>
+<li>Publisher gross went from roughly $10K/day to roughly $20K/day. Six figures across the eight deals.</li>
+</ul></div>
+<button class="copy">Copy story</button>
+</article>
+<article class="story" data-principles="Data-driven decisions|Cross-functional leadership|Building trust" data-side="Publisher" data-topics="Deals and performance|Data and measurement">
+<header><h2>Fixed It, Still Lost the Business</h2><p class="use"><strong>Use for:</strong> A failure, owning a data problem, what you would do differently.</p></header>
+<div class="body"><h4>Situation</h4>
+<p>Two deals running for IFA — a PG and a PMP. The PG delivered in full. The PMP was underpacing and underperforming in Q4, with match rate subpar against the KPIs. It was being A/B tested against the other pipe the buyer was considering, which was a major DSP Backstage.</p>
+<h4>Action</h4>
+<ul>
+<li>Pulled in our solutions engineers, a major DSP’s solutions engineering and sales team, demand-side and publisher-side engineering, and CTV product and engineering.</li>
+<li>Ran bi-weekly calls with roughly twenty people across multiple stakeholders and two organizations. I both led and organized them.</li>
+<li>Worked with bid-level data and found it: 50% of IFA attachment was missing in bid requests. A publisher-side issue.</li>
+<li>Configured with the publisher to change what they were sending. Attachment went from 50% to 98%.</li>
+</ul>
+<h4>Result</h4>
+<ul>
+<li>Resolved mid-February through late March. The PMP then delivered in full for the quarter.</li>
+<li>The buyer routed future campaigns through a major DSP Backstage anyway. We fixed it, educated everyone, and still lost the business going forward.</li>
+</ul>
+<h4>What i would do differently</h4>
+<ul>
+<li>Bring solutions engineering in earlier.</li>
+<li>Take a deeper dive into bid requests and flag to engineering sooner.</li>
+<li>The real lesson: I treated it as a performance problem — pacing, match rate, KPI tuning — before I treated it as a data integrity problem. When a deal underdelivers against a competing pipe, inspect the bid requests early rather than optimizing around a symptom.</li>
+</ul>
+<p>That lesson threads forward: bid-level inspection became standard in deal review, and it is the ancestor of the automated monitoring you built at my current company.</p></div>
+<button class="copy">Copy story</button>
+</article>
+<footer class="contact">
+<p><strong>Matt Hanlon</strong></p>
+<p><a href="mailto:hanlonm88@gmail.com">hanlonm88@gmail.com</a> · <a href="https://linkedin.com/in/hanlonm88">linkedin.com/in/hanlonm88</a></p>
+</footer>
+</main>
+<script>
+(function(){
+  var pSel=document.getElementById('principle'), sSel=document.getElementById('side'), tSel=document.getElementById('topic');
+  var cards=Array.prototype.slice.call(document.querySelectorAll('.story'));
+  var count=document.getElementById('count');
+  function has(attr,v){ return (attr||'').split('|').indexOf(v)!==-1; }
+  function apply(){
+    var p=pSel.value, s=sSel.value, t=tSel.value, shown=0;
+    var any=!!(p||s||t);
+    document.getElementById('empty').hidden=any;
+    if(!any){ cards.forEach(function(c){ c.hidden=true; }); count.textContent=''; return; }
+    cards.forEach(function(c){
+      var ok=(!p||has(c.getAttribute('data-principles'),p))&&(!s||has(c.getAttribute('data-side'),s))&&(!t||has(c.getAttribute('data-topics'),t));
+      c.hidden=!ok; if(ok) shown++;
+    });
+    count.textContent=shown+' of '+cards.length+' stories';
+  }
+  [pSel,sSel,tSel].forEach(function(x){ x.addEventListener('change',apply); }); apply();
+  document.querySelectorAll('.qs a').forEach(function(a){
+    a.addEventListener('click',function(e){
+      e.preventDefault(); pSel.value=''; sSel.value=''; tSel.value=''; apply();
+      var target=cards.filter(function(c){ return c.querySelector('h2').textContent===a.textContent; })[0];
+      if(target){ target.hidden=false; document.getElementById('empty').hidden=true; target.scrollIntoView({behavior:'smooth'}); }
+    });
+  });
+  document.querySelectorAll('.copy').forEach(function(b){
+    b.addEventListener('click',function(){
+      var card=b.closest('.story');
+      var text=card.querySelector('h2').textContent+'\n\n'+card.querySelector('.body').innerText;
+      try{ navigator.clipboard.writeText(text).then(function(){ b.textContent='Copied'; setTimeout(function(){ b.textContent='Copy story'; },1500); },function(){ b.textContent='Copy failed'; }); }
+      catch(e){ b.textContent='Copy failed'; }
+    });
+  });
+})();
+</script></body></html>
+</body></html>
